@@ -1,1 +1,47 @@
 @import "./Components/header";
+@import "./Components/shared";
+@import "./Components/main";
+
+.generic__button{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    height: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.3em;
+
+    color: #D41443;
+    background-color: #FFFFFF;
+    &:hover{
+    color: #FFFFFF;
+    background-color: #D41443;
+    cursor: pointer;
+    }
+}
+
+.arrow__button{
+    display: flex;
+    justify-content: center;
+    
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+
+    margin-top: 0;
+    margin-bottom: 56px;
+    margin-left: 30px;
+    
+    svg{
+        color: #D41443;
+        fill: #D41443;
+        ;
+    }
+}

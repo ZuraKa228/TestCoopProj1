@@ -1,0 +1,30 @@
+p,
+ul,
+li,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
