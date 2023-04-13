@@ -23,6 +23,14 @@ nav {
   margin-top: 50px;
 }
 
+.nav__item {
+  font-style: normal;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: #FFFFFF;
+}
 .nav__item:not(:last-child) {
   margin-right: 35px;
 }
@@ -31,6 +39,30 @@ nav {
   margin-top: 38px;
   margin-left: 110px;
   margin-right: 115px;
+}
+.header__button__container .generic__button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  width: 159px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.46em;
+}
+
+.generic__button:hover .header__svg {
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.header__svg {
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
+  color: #D41443;
+  fill: #D41443;
 }
 
 p,
@@ -114,19 +146,33 @@ a {
   margin-right: 25px;
 }
 
+.hat__arrow__button {
+  position: relative;
+}
+
 .hat__arrow__button .arrow__button {
   display: flex;
   justify-content: center;
+  position: absolute;
   padding: 8px;
-  border-radius: 50%;
-  border: none;
   margin-top: 0;
   margin-bottom: 56px;
   margin-left: 30px;
+  left: -328px;
+  bottom: 0px;
+  border-radius: 50%;
+  border: none;
 }
 .hat__arrow__button .arrow__button svg {
   color: #D41443;
   fill: #D41443;
+}
+.hat__arrow__button .arrow__button:hover {
+  background-color: #D41443;
+}
+.hat__arrow__button .arrow__button:hover svg {
+  color: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .hat__milk {
@@ -151,15 +197,6 @@ a {
   width: 236px;
   height: 557px;
 }
-.hat__mid__image::after {
-  position: absolute;
-  width: 538px;
-  height: 538px;
-  left: -170px;
-  bottom: 100px;
-  background: #FFA5BA;
-  border-radius: 50%;
-}
 
 .hat__left__img {
   width: 188px;
@@ -169,22 +206,45 @@ a {
 }
 
 .hat__right__img {
+  position: absolute;
+  margin-top: 109px;
   margin-right: 109px;
   margin-bottom: 0px;
   width: 293px;
   height: 232px;
+  top: 253px;
+}
+
+.hat__right__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 238px;
+}
+
+.hat__desc__list {
+  justify-content: center;
+  text-align: center;
+  margin-top: 74px;
+}
+
+.hat__desc__list__item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .hat__desc__number {
   position: relative;
   display: flex;
+  justify-content: right;
+  margin-bottom: 2px;
+  margin-left: 215px;
+  margin-top: 38px;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 46px;
   line-height: 1.15em;
   color: #D41443;
 }
-
 .hat__desc__number::after {
   content: "";
   position: absolute;
@@ -194,8 +254,27 @@ a {
   height: 30px;
   border-radius: 50%;
   bottom: 54%;
-  left: 13%;
+  left: 70%;
   background-color: #fff;
+}
+
+.hat__desc__text {
+  position: absolute;
+  text-align: right;
+  width: 74px;
+  height: 18px;
+  margin-left: 234px;
+  right: 0px;
+  font-style: normal;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3em;
+  color: #FFFFFF;
+}
+
+.current {
+  color: #D41443;
 }
 
 .generic__button {
@@ -207,10 +286,7 @@ a {
   border-radius: 20px;
   border: none;
   font-family: "DM Sans";
-  font-weight: 400;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.3em;
   color: #D41443;
   background-color: #FFFFFF;
 }
@@ -223,14 +299,18 @@ a {
 .arrow__button {
   display: flex;
   justify-content: center;
-  padding: 8px;
+  position: absolute;
   border-radius: 50%;
   border: none;
-  margin-top: 0;
-  margin-bottom: 56px;
-  margin-left: 30px;
 }
 .arrow__button svg {
   color: #D41443;
   fill: #D41443;
+}
+.arrow__button:hover {
+  background-color: #D41443;
+}
+.arrow__button:hover svg {
+  color: #FFFFFF;
+  fill: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

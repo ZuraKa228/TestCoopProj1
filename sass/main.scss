@@ -1,7 +1,11 @@
 @import "./Components/header";
 @import "./Components/shared";
-@import "./Components/main";
+@import "./Components/first_section";
 
+.current{
+    color:#D41443;
+}
+// ---BUTTONS---
 .generic__button{
     display: flex;
     text-align: center;
@@ -13,35 +17,33 @@
     border: none;
 
     font-family: 'DM Sans';
-    font-weight: 400;
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.3em;
 
     color: #D41443;
     background-color: #FFFFFF;
-    &:hover{
+&:hover{
     color: #FFFFFF;
     background-color: #D41443;
     cursor: pointer;
     }
 }
-
 .arrow__button{
     display: flex;
     justify-content: center;
+    position: absolute;
     
-    padding: 8px;
     border-radius: 50%;
     border: none;
-
-    margin-top: 0;
-    margin-bottom: 56px;
-    margin-left: 30px;
     
     svg{
         color: #D41443;
         fill: #D41443;
-        ;
+    }
+&:hover{
+        background-color: #D41443;     
+    svg{
+        color: #FFFFFF;
+        fill: #FFFFFF;
+        }
     }
 }
