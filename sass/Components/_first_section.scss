@@ -4,6 +4,7 @@
     background-color: #FFB8CA;
 }
 .hat__container{
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -130,9 +131,11 @@
     height: 238px;
 }
 .hat__desc__list{
+    position: absolute;
     justify-content: center;
     text-align: center;
     margin-top: 74px;
+    margin-bottom: 109px;
 }
 .hat__desc__list__item:not(:last-child){
     margin-bottom: 15px;

@@ -106,6 +106,7 @@ a {
 }
 
 .hat__container {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -223,9 +224,11 @@ a {
 }
 
 .hat__desc__list {
+  position: absolute;
   justify-content: center;
   text-align: center;
   margin-top: 74px;
+  margin-bottom: 109px;
 }
 
 .hat__desc__list__item:not(:last-child) {
