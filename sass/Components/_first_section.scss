@@ -2,6 +2,7 @@
     display: flex;
 
     background-color: #FFB8CA;
+    z-index: 0;
 }
 .hat__container{
     position: relative;
@@ -68,6 +69,7 @@
     }
     &:hover{
         background-color: #D41443;
+        cursor: pointer;
         
         svg{
         color: #FFFFFF;
@@ -96,17 +98,19 @@
     margin: 37px 48px 0px 0px;
     width: 236px;
     height: 557px;
+    z-index: 2;
 }
-// .hat__circle{
-//     position: absolute;
-//     width: 538px;
-//     height: 538px;
-//     left: -170px;
-//     bottom: 100px;
+.hat__circle{
+    position: absolute;
+    width: 538px;
+    height: 538px;
+    left: -120px;
+    bottom: 90px;
 
-//     background: #FFA5BA;
-//     border-radius: 50%;
-// }
+    background: #FFA5BA;
+    z-index: 1;
+    border-radius: 50%;
+}
 .hat__left__img{
     width: 188px;
     height: 191px;
@@ -122,6 +126,7 @@
     width: 293px;
     height: 232px;
     top: 253px;
+    z-index: 2;
 }
 .hat__right__container{
     position: relative;
@@ -155,21 +160,19 @@
     line-height: 1.15em;
 
     color: #D41443;
-&::after{
-        content:'';
-        position: absolute;
-        display: block;
-        background-position: top right;
+    z-index: 2;
+}
+.hat__number__circle{
+    position: absolute;
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: -6%;
     
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        bottom: 54%;
-        left: 70%;
-        
-    
-        background-color: #fff;
-    }
+    background-color: #fff;
+    z-index: 1;
 }
 .hat__desc__text{
     position: absolute;

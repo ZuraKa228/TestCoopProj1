@@ -8,6 +8,7 @@
 
 // --- logo ---
 .logo {
+    position: relative;
     width: 199px;
     height: 50px;
 
@@ -19,6 +20,7 @@
 // --- NAV ---
 nav{
     display: flex;
+    z-index: 2;
 }
 .nav__list{
     display: flex;
@@ -34,6 +36,10 @@ nav{
     line-height: 1.3em;
 
     color:#FFFFFF;
+    &:hover{
+        color:#D41443;
+        cursor: pointer;
+    }
     
 &:not(:last-child){
     margin-right: 35px;
@@ -65,8 +71,8 @@ nav{
     fill: #FFFFFF;
 }
 .header__svg{
-        width: 6px;
-        height: 10px;
+        width: 12px;
+        height: 28px;
         margin-left: 12px;
         color: #D41443;
         fill: #D41443;
