@@ -158,14 +158,24 @@
         </section>
         <section class="section reviews">
             <div class="customer__img">
-                <img src="" alt="customer" width="100%" height="100%">
+                <img src="./image/review1.png" alt="customer" width="100%" height="100%">
             </div>
-            <span class="customer__review">
+            
+            <div class="dsa"><span class="customer__review">
                 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
             </span>
-            <span class="dots__customers">...</span>
-            <span class="customer__location"></span>
-            <div class="review__icons">
+            <svg width="54px" height="40px" class="customer__review__svg">
+                <use href="./image/svg/sprite.svg#customer__svg"></use></svg>
+                <div class="text__line__one"></div>
+            </div>
+            <div class="text__line"></div>
+            <ul class="dots__ul">
+                <li class="dots__customers"></li>
+                <li class="dots__customers"></li>
+                <li class="dots__customers"></li>
+            </ul>
+            <span class="customer__location">Emily, Los Angeles</span>
+            <!-- <div class="review__icons">
                 <svg width="40px" height="40px" class="customer__icon">
                 <use href=""></use>
                 </svg><svg width="40px" height="40px" class="customer__icon">
@@ -173,7 +183,12 @@
                 </svg><svg width="40px" height="40px" class="customer__icon">
                 <use href=""></use>
             </svg>
-        </div>
+        </div> -->
+        <ul class="review__icons">
+            <li class="customer__icon"><svg class="customer__icon__svg"><use href="./image/svg/sprite.svg#home"></use></svg></li>
+            <li class="customer__icon"></li>
+            <li class="customer__icon"></li>
+        </ul>
         </section>
         <section class="section locations">
             <ul class="locations__list">
